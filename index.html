@@ -6,67 +6,103 @@
 <title>Qemi Skin</title>
 
 <style>
-body{
+*{
     margin:0;
-    background:#0f1117;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#111827,#0f172a,#1e293b);
     color:white;
-    font-family:Arial,sans-serif;
     text-align:center;
 }
 
 .container{
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
     padding:60px 20px;
 }
 
 h1{
-    font-size:48px;
+    font-size:55px;
+    margin-bottom:10px;
 }
 
-p{
-    color:#bfbfbf;
+.subtitle{
+    color:#b8b8b8;
+    margin-bottom:35px;
+    font-size:18px;
 }
 
 .download{
     display:inline-block;
-    margin-top:25px;
-    padding:16px 35px;
+    padding:18px 38px;
     background:#5865F2;
     color:white;
     text-decoration:none;
     border-radius:12px;
-    font-size:20px;
+    font-size:22px;
+    transition:.25s;
 }
 
 .download:hover{
+    transform:scale(1.05);
     background:#7289da;
 }
 
-img{
-    width:90%;
-    max-width:700px;
-    border-radius:15px;
-    margin-top:40px;
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:50px;
+}
+
+.gallery img{
+    width:420px;
+    max-width:100%;
+    border-radius:14px;
+    transition:.3s;
+    box-shadow:0 0 25px rgba(0,0,0,.4);
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+footer{
+    margin-top:60px;
+    color:#888;
+    font-size:15px;
 }
 </style>
 
 </head>
+
 <body>
 
 <div class="container">
 
-<h1>Qemi osu!mania Skin</h1>
+<h1>Qemi Skin</h1>
 
-<p>A clean, minimal osu!mania skin.</p>
+<p class="subtitle">
+Minimal • Clean • osu!mania
+</p>
 
 <a class="download" href="tekito2 qemi edit.osk">
 ⬇ Download Skin
 </a>
 
-<h2>Screenshots</h2>
+<div class="gallery">
+<img src="screenshot245.png" alt="Screenshot 1">
+<img src="screenshot246.png" alt="Screenshot 2">
+</div>
 
-<p>(Screenshots coming soon)</p>
+<footer>
+Made by Qemi
+</footer>
 
 </div>
 
